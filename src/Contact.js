@@ -24,11 +24,14 @@ const Contact = () => {
         "https://ozcode.vercel.app/send-message",
         formData
       );
-      console.log(response.data);
+      console.log("Response from server:", response.data);
       setIsError(false); // No error
       setIsModalVisible(true); // Show modal on success
     } catch (error) {
-      console.error("There was an error sending the message!", error);
+      console.error(
+        "Error sending message:",
+        error.response ? error.response.data : error.message
+      );
       setIsError(true); // Error occurred
       setIsModalVisible(true); // Show modal even on error
     }
