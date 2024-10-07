@@ -1,0 +1,161 @@
+.home-hero {
+    height: 100vh;
+    position: relative;
+    background: url(https://john-react.wethemez.com/static/media/profile.7ad8c82f56b2a02d3bb9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.home-hero__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 92%;
+    z-index: 2;
+    opacity: 1;
+}
+
+.heading-primary {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+}
+
+.home-hero__info {
+    max-width: 80rem;
+    margin: 3rem auto 0px;
+}
+
+.text-primary {
+    color: #bab8b8;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-group {
+    width: 100%;
+}
+
+.social-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    color: #fff;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    padding: 20px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    color: #000;
+    background-color: #bab8b8;
+}
+
+.mouse-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+}
+
+.mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #cecbcb;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden
+}
+
+.mouse::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 27px
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+        opacity: 0;
+        top: 27px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-hero__content {
+        position: absolute;
+        /* position: static;
+        transform: translate(0px, 0px); */
+        padding: 12rem 0px 13rem;
+        margin: auto;
+        z-index: 2;
+    }
+
+    .heading-primary {
+        font-size: 20px;
+    }
+
+    .text-primary {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .social-link {
+        padding: 10px;
+    }
+}
+
+
+
+
+
