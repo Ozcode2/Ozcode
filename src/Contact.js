@@ -21,7 +21,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://ozcode.vercel.app/send-message",
+        "http://localhost:5000/send-message",
         formData
       );
       console.log("Response from server:", response.data);
