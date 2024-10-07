@@ -129,6 +129,18 @@ a {
     }
 }
 
+.home-hero__info{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Final state: elements slide up into position */
+.slide-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @media only screen and (max-width: 600px) {
     .home-hero__content {
         position: absolute;
