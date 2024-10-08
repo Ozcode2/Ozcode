@@ -10,6 +10,7 @@ import React, { useEffect, useRef } from "react";
 
 const Home = () => {
   const homeRef = useRef(null);
+  const socialRef = useRef(null);
 
   useEffect(() => {
     const observerOptions = {
@@ -31,10 +32,12 @@ const Home = () => {
     );
 
     if (homeRef.current) observer.observe(homeRef.current);
+    if (socialRef.current) observer.observe(socialRef.current);
 
     // Cleanup observer on component unmount
     return () => {
       if (homeRef.current) observer.unobserve(homeRef.current);
+      if (socialRef.current) observer.unobserve(socialRef.current);
     };
   }, []);
 
@@ -58,7 +61,7 @@ const Home = () => {
             of the overall product
           </p>
         </div>
-        <div className="social-group">
+        <div ref={socialRef} className="social-group">
           <div className="social-wrap">
             <div className="social-icons">
               <a href="https://twitter.com/Ozcode2" target="_blank">

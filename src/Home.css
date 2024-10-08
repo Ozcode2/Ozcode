@@ -129,7 +129,8 @@ a {
     }
 }
 
-.home-hero__info{
+.home-hero__info,
+.social-group{
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease, transform 0.8s ease;

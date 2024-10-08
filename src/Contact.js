@@ -20,10 +20,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(
-        "http://localhost:5000/send-message",
-        formData
-      );
+      const response = await axios.post("/api/send-message", formData);
       console.log("Response from server:", response.data);
       setIsError(false); // No error
       setIsModalVisible(true); // Show modal on success
