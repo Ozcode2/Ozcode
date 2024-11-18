@@ -1,6 +1,6 @@
 import "./Contact.css";
 import React, { useState, useRef, useEffect } from "react";
-import axios from "axios";
+import axios from "./axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("/api/send-message", formData);
+      const response = await axios.post("/sendMessage", formData);
       console.log("Response from server:", response.data);
       setIsError(false); // No error
       setIsModalVisible(true); // Show modal on success
