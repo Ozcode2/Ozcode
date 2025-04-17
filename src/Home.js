@@ -58,7 +58,7 @@ const Home = () => {
           <p className="text-primary">
             A Result-Oriented Full-stack Web Developer who dabbles in building
             and managing Websites and Web Applications that leads to the success
-            of the overall product
+            of the overall product.
           </p>
         </div>
         <div ref={socialRef} className="social-group">

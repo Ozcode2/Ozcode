@@ -1,7 +1,7 @@
 .home-hero {
     height: 100vh;
     position: relative;
-    background: url(https://john-react.wethemez.com/static/media/profile.7ad8c82f56b2a02d3bb9.jpg);
+    background: url(https://images.unsplash.com/photo-1596869884282-e95a8c9e556f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -75,6 +75,7 @@ a {
     overflow: hidden;
     display: inline-block;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .social-link:hover {

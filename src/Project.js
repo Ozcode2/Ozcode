@@ -55,7 +55,7 @@ const Project = () => {
             <div className="project-text">
               <h3 className="project-title">Amazon-clone</h3>
               <p className="project-paragraph">
-                Amazon-clone just as it's name implies is a clone of the
+                Amazon-clone just as its name implies is a clone of the
                 well-known Amazon e-commerce website, it possesses an appealing
                 UI and well set-up back-end which makes the overall product
                 appear gracious ✨.
@@ -96,7 +96,7 @@ const Project = () => {
                 <a href="https://www.moonapp.io" target="_blank">
                   www.moonapp.io
                 </a>
-                , It leaves the user in awe on visiting the website it comprises
+                , it leaves the user in awe on visiting the website it comprises
                 of a video and lots of animations, It makes the overall user
                 experience top-notch
               </p>
